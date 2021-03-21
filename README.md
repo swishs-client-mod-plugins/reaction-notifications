@@ -1,4 +1,4 @@
-![Banner](https://github.com/swishs-client-mod-plugins/reaction-notifications/assets/banner.png?raw=true)
+![Banner](https://raw.githubusercontent.com/swishs-client-mod-plugins/reaction-notifications/vizality/assets/banner.png)
 
 <p align="center">
   <a href="#"><img align="center" alt="GitHub repo size" src="https://img.shields.io/github/repo-size/swishs-client-mod-plugins/reaction-notifications?color=FFC24A&style=for-the-badge&logo=github">
