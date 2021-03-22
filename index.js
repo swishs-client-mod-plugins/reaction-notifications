@@ -26,12 +26,13 @@ export default class ReactionNotifications extends Plugin {
         const CHANNEL = getChannel(reaction.channelId)
         const GUILD = getGuild(CHANNEL.guild_id)
         
-        if (getStatus(CURRENT_USER) !== 'dnd')
+        if (getStatus(CURRENT_USER) !== 'dnd') 
           new Notification(`${USER.username}${GUILD ? ` (#${CHANNEL.name}, ${GUILD.name})` : ''}`, {
             icon: USER.getAvatarURL(),
             body: `New Reaction: ${reaction.emoji.name}`,
             silent: true
-          }).addEventListener('click', () => transitionTo(`/channels/${GUILD ? GUILD.id : '@me'}/${CHANNEL.id}/${MESSAGE.id}`))
+          }).addEventListener('click', () => transitionTo(`/channels/${GUILD ? GUILD.id : '@me'}/${CHANNEL.id}/${MESSAGE.id}`)),
+          new Audio('https://discord.com/assets/dd920c06a01e5bb8b09678581e29d56f.mp3').play()
         // i'll add xenolib support when it actually works in vz :)
       }
     }
